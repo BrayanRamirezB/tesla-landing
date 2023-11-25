@@ -1,0 +1,14 @@
+---
+import Section from '../components/Section.astro';
+---
+
+<Section title="Model Y" subtitle="Lease starting at $399/mo*" color="white">
+    <div slot="footer">
+        <div class="flex flex-row justify-center gap-x-6 mx-auto pb-10">
+            <a class="rounded font-medium px-20 py-2 inline-block bg-black opacity-70" href="#">Order Now</a>
+            <a class="rounded font-medium px-20 py-2 inline-block text-black bg-white opacity-70" href="#">Demo Drive</a>
+        </div>
+        <p class="text-[14px]">*Excludes taxes and fees with price subject to change. Available in select states.</p>
+    </div>
+    <video slot="background" class="object-center object-cover h-full w-full" src="/Homepage-Model-Y-Desktop-NA.mp4" autoplay muted loop></video>
+</Section>

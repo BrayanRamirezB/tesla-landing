@@ -1,0 +1,15 @@
+---
+import Section from '../components/Section.astro';
+const { color, title, subtitle, paragraph } = Astro.props
+---
+
+<Section title={title} subtitle={subtitle} color={color} paragraph={paragraph} >
+    <div slot="footer">
+        <div class="flex flex-row justify-center gap-x-6 mx-auto pb-10">
+            <slot name="ref1" />
+            <slot name="ref2" />
+        </div>
+        <slot name="ref3" />
+    </div>
+    <slot name="background" slot="background" />
+</Section>
